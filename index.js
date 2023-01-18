@@ -11,7 +11,7 @@ require("dotenv").config();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const corsOptions = {
-  origin: "https://nkv-chat-app.netlify.app/",
+  origin: "http://localhost:5173/",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
