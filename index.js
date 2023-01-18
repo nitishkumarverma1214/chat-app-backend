@@ -11,7 +11,7 @@ require("dotenv").config();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const corsOptions = {
-  origin: "http://localhost:5173/",
+  origin: "*",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
