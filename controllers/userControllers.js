@@ -29,6 +29,7 @@ const registerUser = asyncHandler(async (req, res) => {
 });
 
 const authUser = asyncHandler(async (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
